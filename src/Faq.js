@@ -7,7 +7,7 @@ import FAQ_LIST from './faq.json'
 export const Faq = ({ index, setIndex }) => {
     return (
         <div>
-            <Flex direction='column' p='4'>
+            <Flex direction='column' p='4' overflow='auto' >
                 <Box mb='8'>
                     <Heading size='md'>Frequently asked Questions</Heading>
                 </Box>

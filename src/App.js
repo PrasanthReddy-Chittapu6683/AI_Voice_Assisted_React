@@ -5,6 +5,7 @@ import { NavBar } from './NavBar'
 import { Faq } from './Faq'
 import alanBtn from "@alan-ai/alan-sdk-web";
 import { scroller } from 'react-scroll'
+import Footer from './Footer';
 export const App = () => {
   const alanBtnInstance = useRef(null);
   const [index, setIndex] = useState(null)
@@ -33,6 +34,7 @@ export const App = () => {
     <ChakraProvider theme={theme}>
       <NavBar toogleColorFlag={toogleColorMode} />
       <Faq index={index} setIndex={setIndex} />
+      <Footer toogleColorFlag={toogleColorMode}/>
     </ChakraProvider>
   )
 }
